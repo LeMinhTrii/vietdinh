@@ -1,22 +1,22 @@
-fetch("http://localhost:3004/category")
+fetch("https://dbvietdinh.vercel.app/api/category")
   .then((res) => res.json())
   .then((res) => getCategory(res));
-fetch("http://localhost:3004/suggest")
+fetch("https://dbvietdinh.vercel.app/api/suggest")
   .then((res) => res.json())
   .then((res) => getSuggest(res));
-fetch("http://localhost:3004/sale")
+fetch("https://dbvietdinh.vercel.app/api/sale")
   .then((res) => res.json())
   .then((res) => getSale(res));
-fetch("http://localhost:3004/cold")
+fetch("https://dbvietdinh.vercel.app/api/cold")
   .then((res) => res.json())
   .then((res) => getColdTop(res));
-fetch("http://localhost:3004/coldprd")
+fetch("https://dbvietdinh.vercel.app/api/coldprd")
   .then((res) => res.json())
   .then((res) => getColdBox(res));
-fetch("http://localhost:3004/tool")
+fetch("https://dbvietdinh.vercel.app/api/tool")
   .then((res) => res.json())
   .then((res) => getToolTop(res));
-fetch("http://localhost:3004/toolprd")
+fetch("https://dbvietdinh.vercel.app/api/toolprd")
   .then((res) => res.json())
   .then((res) => getToolBox(res));
 const getCategory = (data) => {

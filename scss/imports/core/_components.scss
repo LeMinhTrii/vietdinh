@@ -102,19 +102,8 @@ a {
                 }
             }
             .thumnail {
-                position: relative;
-                padding-bottom: 80%;
-                overflow: hidden;
                 img {
-                    transition: 0.4s;
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
                     transform: translate(-50%, -50%) scale(0.6);
-                    object-fit: cover;
-                    max-width: 100%;
-                    min-width: 100%;
-                    min-height: 100%;
                 }
             }
         }
@@ -126,30 +115,7 @@ a {
     @media (max-width: $xs-min) {
         // Mobile
         .listbox {
-            display: grid;
             grid-template-columns: repeat(3, 1fr);
-            .item {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                text-align: center;
-                border: 1px solid #88888818;
-                .thumnail {
-                    position: relative;
-                    padding-bottom: 80%;
-                    overflow: hidden;
-                    img {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        object-fit: cover;
-                        max-width: 100%;
-                        min-width: 100%;
-                        min-height: 100%;
-                    }
-                }
-            }
         }
     }
 }
@@ -275,6 +241,24 @@ a {
     @media (max-width: $sm-min) {
         // Tablet
         grid-template-columns: repeat(3, 1fr);
+        .item {
+            position: relative;
+            border: 1px solid #88888821;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+                .thumnail {
+                    img {
+                        transform: translate(-50%, -50%) scale(0.75);
+                    }
+                }
+            }
+            .thumnail {
+                img {
+                    transform: translate(-50%, -50%) scale(0.6);
+                }
+            }
+        }
     }
     @media (max-width: $xs-min) {
         // Mobile

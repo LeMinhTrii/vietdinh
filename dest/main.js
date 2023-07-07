@@ -21,8 +21,10 @@ fetch("https://dbvietdinh.vercel.app/api/toolprd")
   .then((res) => getToolBox(res));
 const getCategory = (data) => {
   data &&
-    data.map((e) => {
-      let item = ` <div class="item">
+    data.map((e, i) => {
+      let item = ` <div class="item" data-aos="fade-up" data-aos-duration="${
+        1000 + i * 3
+      }" data-aos-offset="0"  data-aos-easing="ease-in-out">
               <div class="thumnail">
               <img src="./img/${e.photo}" alt="">
                       </div>
@@ -36,8 +38,10 @@ getCategory();
 
 const getSuggest = (data) => {
   data &&
-    data.map((e) => {
-      let item = `  <div class="item">
+    data.map((e, i) => {
+      let item = `  <div class="item" data-aos="fade-up" data-aos-duration="${
+        600 + i * 2
+      }" data-aos-offset="0"  data-aos-easing="ease-in-out">
                             <div class="thumnail">
                                 <img src="./img/${e.photo}" alt="">
                             </div>
@@ -61,8 +65,10 @@ getSuggest();
 
 const getSale = (data) => {
   data &&
-    data.map((e) => {
-      let item = `    <div class="item">
+    data.map((e, i) => {
+      let item = `    <div class="item"data-aos="fade-up" data-aos-duration="${
+        600 + i * 3
+      }" data-aos-offset="0"  data-aos-easing="ease-in-out" >
                             <div class="thumnail">
                                 <img src="./img/${e.photo}" alt="">
                             </div>
@@ -117,8 +123,10 @@ getSale();
 
 const getColdTop = (data) => {
   data &&
-    data.map((e) => {
-      let item = `     <div class="item">
+    data.map((e, i) => {
+      let item = `     <div class="item" data-aos="fade-up" data-aos-duration="${
+        600 + i * 3
+      }" data-aos-offset="0"  data-aos-easing="ease-in-out">
                                 <div class="thumnail">
                                     <img src="./img/${e.photo}" alt="">
                                 </div>
@@ -130,8 +138,10 @@ const getColdTop = (data) => {
 getColdTop();
 const getColdBox = (data) => {
   data &&
-    data.map((e) => {
-      let item = `    <div class="item">
+    data.map((e, i) => {
+      let item = `    <div class="item" data-aos="fade-up" data-aos-duration="${
+        600 + i * 3
+      }" data-aos-offset="0"  data-aos-easing="ease-in-out">
                             <div class="thumnail">
                                 <img src="./img/${e.photo}" alt="">
                             </div>
@@ -155,8 +165,10 @@ const getColdBox = (data) => {
 getColdBox();
 const getToolTop = (data) => {
   data &&
-    data.map((e) => {
-      let item = `     <div class="item">
+    data.map((e, i) => {
+      let item = `     <div class="item" data-aos="fade-up" data-aos-duration="${
+        600 + i * 3
+      }" data-aos-offset="0"  data-aos-easing="ease-in-out">
                                 <div class="thumnail">
                                     <img src="./img/${e.photo}" alt="">
                                 </div>
@@ -168,8 +180,10 @@ const getToolTop = (data) => {
 getToolTop();
 const getToolBox = (data) => {
   data &&
-    data.map((e) => {
-      let item = ` <div class="item">
+    data.map((e, i) => {
+      let item = ` <div class="item" data-aos="fade-up" data-aos-duration="${
+        600 + i * 3
+      }" data-aos-offset="0"  data-aos-easing="ease-in-out">
                             <div class="thumnail">
                                 <img src="./img/${e.photo}" alt="">
                             </div>
@@ -257,3 +271,4 @@ category_header.addEventListener("click", function () {
     category_bar.style.display = "block";
   }
 });
+AOS.init();

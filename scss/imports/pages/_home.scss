@@ -61,10 +61,22 @@
             left: 50%;
             transform: translateX(-50%);
             margin-top: 25px;
-            transition: 0.4s;
+            transition: 1s;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                width: 0%;
+                content: "";
+                background: linear-gradient(270deg, #fe9800 0%, #ffc700 100%);
+                border-radius: 4px;
+                z-index: -1;
+            }
             .text {
                 font-size: 16px;
                 transition: 0.4s;
+                color: #000;
             }
             img {
                 @include size(20px);
@@ -75,19 +87,20 @@
                 transition: 0.4s;
             }
             &:hover {
+                &:before {
+                    animation: trans2 0.4s ease-in-out 0.4s forwards;
+                    z-index: -1;
+                }
                 img {
-                    right: -30px;
-                    transition: 0.4s;
+                    animation: trans 0.8s ease-in-out forwards;
                 }
                 border: 1px solid #fe9800;
                 .text {
-                    color: #fff;
-                    transition: 0.4s;
+                    animation: color 0.4s ease-in-out 0.4s forwards;
                 }
                 transition: 0.4s;
                 border-radius: 5px;
                 cursor: pointer;
-                background: linear-gradient(270deg, #fe9800 0%, #ffc700 100%);
             }
         }
     }
@@ -128,6 +141,9 @@
                 position: relative;
                 padding: 10px;
                 border: 1px solid #8888881e;
+                &.active {
+                    animation: scroll 1s ease-in forwards;
+                }
                 &:hover {
                     .thumnail {
                         img {
@@ -435,5 +451,50 @@
     }
     100% {
         transform: rotate(10deg);
+    }
+}
+
+@keyframes color {
+    0% {
+        color: #000;
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+@keyframes trans {
+    0% {
+        transform: translate(0, -50%);
+    }
+    50% {
+        transform: translate(-140px, -50%);
+    }
+    100% {
+        transform: translate(0, -50%);
+    }
+}
+
+@keyframes trans2 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -1,7 +1,7 @@
 @font-face {
     font-family: "HypatiaSansPro";
-    src: url("../font/HypatiaSansPro-Bold.woff2") format("woff2"),
-        url("../font/HypatiaSansPro-Bold.woff") format("woff");
+    src: url("../fonts/HypatiaSansPro-Bold.woff2") format("woff2"),
+        url("../fonts/HypatiaSansPro-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: "HypatiaSansPro";
-    src: url("../font/HypatiaSansPro-ExtraLight.woff2") format("woff2"),
-        url("../font/HypatiaSansPro-ExtraLight.woff") format("woff");
+    src: url("../fonts/HypatiaSansPro-ExtraLight.woff2") format("woff2"),
+        url("../fonts/HypatiaSansPro-ExtraLight.woff") format("woff");
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: "HypatiaSansPro";
-    src: url("../font/HypatiaSansPro-Black.woff2") format("woff2"),
-        url("../font/HypatiaSansPro-Black.woff") format("woff");
+    src: url("../fonts/HypatiaSansPro-Black.woff2") format("woff2"),
+        url("../fonts/HypatiaSansPro-Black.woff") format("woff");
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: "HypatiaSansPro";
-    src: url("../font/HypatiaSansPro-Light.woff2") format("woff2"),
-        url("../font/HypatiaSansPro-Light.woff") format("woff");
+    src: url("../fonts/HypatiaSansPro-Light.woff2") format("woff2"),
+        url("../fonts/HypatiaSansPro-Light.woff") format("woff");
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: "HypatiaSansPro";
-    src: url("../font/HypatiaSansPro-Semibold.woff2") format("woff2"),
-        url("../font/HypatiaSansPro-Semibold.woff") format("woff");
+    src: url("../fonts/HypatiaSansPro-Semibold.woff2") format("woff2"),
+        url("../fonts/HypatiaSansPro-Semibold.woff") format("woff");
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -45,8 +45,8 @@
 
 @font-face {
     font-family: "HypatiaSansPro";
-    src: url("../font/HypatiaSansPro-Regular.woff2") format("woff2"),
-        url("../font/HypatiaSansPro-Regular.woff") format("woff");
+    src: url("../fonts/HypatiaSansPro-Regular.woff2") format("woff2"),
+        url("../fonts/HypatiaSansPro-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;

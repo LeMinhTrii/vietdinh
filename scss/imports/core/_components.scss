@@ -164,13 +164,17 @@ a {
         .name {
             color: #000;
             text-align: center;
-            font-size: 14px;
-            font-family: Inter;
+            font-size: 15px;
             font-style: normal;
             font-weight: 600;
             line-height: 18px;
-            padding: 0 15px 10px;
+            margin: 0 15px 10px;
             transition: 0.4s;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            box-sizing: border-box;
             &:hover {
                 color: #ec0509;
                 transition: 0.4s;

@@ -93,7 +93,7 @@ a {
                 .thumnail {
                     img {
                         transition: 0.4s;
-                        transform: translate(-50%, -50%) scale(0.7);
+                        transform: scale(0.9);
                     }
                 }
                 .name {
@@ -102,8 +102,17 @@ a {
                 }
             }
             .thumnail {
+                padding-bottom: unset;
                 img {
-                    transform: translate(-50%, -50%) scale(0.6);
+                    transition: 0.4s;
+                    height: auto;
+                    min-width: unset;
+                    height: auto;
+                    min-height: unset;
+                    top: unset;
+                    left: unset;
+                    position: relative;
+                    transform: scale(0.8);
                 }
             }
         }
@@ -157,7 +166,7 @@ a {
                 transform: translate(-50%, -50%) scale(0.6);
                 object-fit: cover;
                 max-width: 100%;
-                min-width: 100%;
+                // min-width: 100%;
                 min-height: 100%;
             }
         }
@@ -175,6 +184,7 @@ a {
             -webkit-line-clamp: 2;
             -webkit-box-orient: vertical;
             box-sizing: border-box;
+            height: 35px;
             &:hover {
                 color: #ec0509;
                 transition: 0.4s;

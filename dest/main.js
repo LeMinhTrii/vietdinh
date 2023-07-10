@@ -211,7 +211,7 @@ const handleCountDown = () => {
     allhour = document.querySelectorAll(".hour .number"),
     allminute = document.querySelectorAll(".minutes .number"),
     allsecond = document.querySelectorAll(".second .number");
-  const countDownDate = new Date("07/10/2023 00:00:00").getTime(),
+  const countDownDate = new Date("07/12/2023 00:00:00").getTime(),
     now = new Date().getTime(),
     distance = countDownDate - now,
     seconds = 1000,

@@ -8,13 +8,14 @@
             .item {
                 border: 1px solid #8888880f;
                 text-align: center;
-                padding: 15px 0;
+                padding: 15px 0 0;
                 cursor: pointer;
                 &:hover {
                     .thumnail {
                         img {
                             transition: 0.4s;
-                            transform: translate(-50%, -50%) scale(0.7);
+                            // transform: translate(-50%, -50%) scale(0.7);
+                            transform: scale(1.2);
                         }
                     }
                     .name {
@@ -23,24 +24,27 @@
                     }
                 }
                 .thumnail {
-                    position: relative;
-                    overflow: hidden;
-                    padding-bottom: 100%;
+                    // position: relative;
+                    // overflow: hidden;
+                    // padding-bottom: 100%;
                     img {
                         transition: 0.4s;
-                        position: absolute;
+                        // position: absolute;
                         max-width: 100%;
-                        min-width: 100%;
-                        min-height: 100%;
-                        object-fit: cover;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%) scale(0.6);
+                        height: auto;
+                        vertical-align: middle;
+                        // min-width: 100%;
+                        // min-height: 100%;
+                        // object-fit: cover;
+                        // top: 50%;
+                        // left: 50%;
+                        // transform: translate(-50%, -50%) scale(0.6);
+                        transform: scale(1.1);
                     }
                 }
                 .name {
-                    margin: 0 auto;
-                    height: 37px;
+                    margin: 10px auto 5px;
+                    height: 34px;
                     font-size: 15px;
                     overflow: hidden;
                     width: 100px;
@@ -167,10 +171,11 @@
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        transform: translate(-50%, -50%) scale(0.8);
+                        transform: translate(-50%, -50%) scale(0.9);
                         object-fit: cover;
                         max-width: 100%;
-                        min-width: 100%;
+                        height: auto;
+                        // min-width: 100%;
                         min-height: 100%;
                     }
                 }
@@ -299,14 +304,14 @@
                     overflow: hidden;
                     padding-bottom: 100%;
                     img {
-                        transform: 0.4s;
+                        transition: 0.4s;
                         position: absolute;
                         top: 50%;
                         left: 50%;
-                        transform: translate(-50%, -50%) scale(0.8);
+                        transform: translate(-50%, -50%) scale(0.9);
                         object-fit: cover;
                         max-width: 100%;
-                        min-width: 100%;
+                        // min-width: 100%;
                         min-height: 100%;
                     }
                 }
